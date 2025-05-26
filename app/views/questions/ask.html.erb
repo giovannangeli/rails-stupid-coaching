@@ -1,0 +1,7 @@
+<h1>Questions#ask</h1>
+<p>Find me in app/views/questions/ask.html.erb</p>
+<%= form_tag("/answer", method: :get) do %>
+  <%= label_tag(:question, "Ta question :") %>
+  <%= text_field_tag(:question) %>
+  <%= submit_tag("Demander au coach") %>
+<% end %>
